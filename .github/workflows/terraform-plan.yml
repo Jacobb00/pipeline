@@ -4,7 +4,7 @@ name: Terraform Plan & Drift Detection
 # Wworkflowu tetikleyecek olaylar 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Her 5 dakikada bir çalış test kontrol
+    - cron: '0 */12 * * *'  # Her 12 saatte bir çalışır (00:00 ve 12:00'de)
   workflow_dispatch:      # Github ui üzerinden manuel tetikleme izni
   pull_request:          # Pull Request açıldığında ve güncelledniğnde çalışacak olan 
     branches: [ main ]   # Sadece main branch'e açılan PR'larda çalışır
