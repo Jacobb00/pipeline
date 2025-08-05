@@ -1,6 +1,12 @@
 # workflof adı 
 name: Terraform Plan & Drift Detection
 
+# oidc auth 
+permissions:
+  id-token: write
+  contents: read
+  issues: write
+
 # Wworkflowu tetikleyecek olaylar 
 on:
   schedule:
